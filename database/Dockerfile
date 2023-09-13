@@ -1,0 +1,12 @@
+FROM postgres:latest
+
+# SETTING ENVIRONMENT VARIABLES
+ENV POSTGRES_DB logs
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD postgres
+
+# INITIALIZING DATABASE
+COPY ./scripts/init.sql /docker-entrypoint-initdb.d/
+
+# EXPOSE PORT FOR LOCAL WORK
+EXPOSE 5432

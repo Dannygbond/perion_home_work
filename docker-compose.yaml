@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  nginx:
+    build:
+      context: ./nginx
+    restart: always
+    ports:
+      - 443:443
+    tty: true
+    links:
+      - backend
+
+  frontend:
+    build:
+      context: ./frontend
+    restart: always
+    tty: true
+    links:
+      - nginx:event-tracker-api
+
+  backend:
+    build:
+      context: ./backend
+    restart: always
+    depends_on:
+      - database
+    tty: true
+    links:
+      - database:database
+
+  database:
+    build:
+      context: ./database
+    restart: always
+    tty: true
