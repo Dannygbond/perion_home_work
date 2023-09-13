@@ -1,0 +1,17 @@
+.box {
+  width: 100%;
+  height: "fit-content";
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .responsiveBox {
+    flex-direction: column !important;
+  }
+  .box {
+    max-width: 100% !important;
+    min-width: 100% !important;
+    align-items: center !important;
+  }
+}

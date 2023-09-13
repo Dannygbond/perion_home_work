@@ -1,0 +1,19 @@
+/* Footer Styles */
+.footer {
+  color: rgb(100, 110, 115);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.divider {
+  border: 1px solid rgb(168, 170, 172);
+}
+
+.disclaimer {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.copyright {
+  font-size: 14px;
+}

@@ -1,0 +1,11 @@
+.blogCard {
+  width: 550px;
+  height: 240px;
+}
+
+@media screen and (max-width: 600px) {
+  .blogCard {
+    width: 350px;
+    height: 350px;
+  }
+}

@@ -1,0 +1,32 @@
+.bar {
+  width: 100%;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.barFill {
+  background-color: #82ca9d;
+  height: 10px;
+  border-radius: 2px 5px 5px 2px;
+  transition: height 0.3s ease;
+}
+
+.horizontalBar {
+  height: 100%;
+  border-radius: 5px;
+  width: 10px;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.horizontalBarFill {
+  background-color: #82ca9d;
+  width: 10px;
+  border-radius: 5px 5px 2px 2px;
+  transition: height 0.3s ease;
+}

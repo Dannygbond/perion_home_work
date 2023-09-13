@@ -1,0 +1,21 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.image {
+  filter: invert(75%) sepia(62%) saturate(6650%) hue-rotate(6deg)
+    brightness(101%) contrast(103%);
+}

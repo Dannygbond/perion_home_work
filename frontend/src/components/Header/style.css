@@ -1,0 +1,71 @@
+/* Header Styles */
+.header {
+  background-color: rgb(244, 124, 0);
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s, position 0.3s, background-color 0.3s;
+}
+
+.hidden {
+  position: inherit;
+  background-color: transparent;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #007bff;
+  width: 0;
+  transition: width 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-links li.active .underline {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.active {
+  font-weight: bold;
+}
